@@ -1,14 +1,14 @@
 require "boolean_accessor/version"
 
 module BooleanAccessor
-  def boolean_attr_accessor(*args)
-    attr_accessor(*args)
-    alias_question(args)
+  def boolean_attr_accessor(*attrs)
+    attr_accessor(*attrs)
+    alias_question(attrs)
   end
 
-  def boolean_attr_reader(*args)
-    attr_reader(*args)
-    alias_question(args)
+  def boolean_attr_reader(*attrs)
+    attr_reader(*attrs)
+    alias_question(attrs)
   end
 
   alias_method :battr_accessor, :boolean_attr_accessor
