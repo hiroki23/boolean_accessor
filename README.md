@@ -1,6 +1,6 @@
 # BooleanAccessor
 
-TODO: Write a gem description
+BooleanAccessor adds question methods to boolean attributes.
 
 ## Installation
 
@@ -18,7 +18,24 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+class Foo
+  battr_accessor :bar, :baz   # Or, boolean_attr_accessolr :bar, :baz
+  battr_reader :qux           # Or, boolean_attr_reader :qux
+
+  def initialize
+    @bar = true
+    @qux = false
+  end
+end
+
+foo = Foo.new
+foo.bar? # => true
+foo.qux? # => false
+
+foo.baz  # => nil
+foo.baz? # => false
+```
 
 ## Contributing
 

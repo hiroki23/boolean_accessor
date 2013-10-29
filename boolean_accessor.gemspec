@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = BooleanAccessor::VERSION
   spec.authors       = ["Hiroki Fujita"]
   spec.email         = ["hiroki.fujita@gmail.com"]
-  spec.description   = %q{Add question method for boolean attributes}
-  spec.summary       = %q{Add question method for boolean attributes}
+  spec.description   = %q{Add question methods to boolean attributes}
+  spec.summary       = %q{Add question methods to boolean attributes}
   spec.homepage      = "https://github.com/hiroki23/boolean_accessor"
   spec.license       = "MIT"
 
