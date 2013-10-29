@@ -6,11 +6,11 @@ require 'boolean_accessor/version'
 Gem::Specification.new do |spec|
   spec.name          = "boolean_accessor"
   spec.version       = BooleanAccessor::VERSION
-  spec.authors       = ["fujita"]
+  spec.authors       = ["Hiroki Fujita"]
   spec.email         = ["hiroki.fujita@gmail.com"]
   spec.description   = %q{Add question method for boolean attributes}
   spec.summary       = %q{Add question method for boolean attributes}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/hiroki23/boolean_accessor"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
