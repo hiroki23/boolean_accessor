@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ```ruby
 class Foo
-  battr_accessor :bar, :baz   # Or, boolean_attr_accessolr :bar, :baz
+  battr_accessor :bar, :baz   # Or, boolean_attr_accessor :bar, :baz
   battr_reader :qux           # Or, boolean_attr_reader :qux
 
   def initialize
@@ -32,6 +32,9 @@ end
 foo = Foo.new
 foo.bar? # => true
 foo.qux? # => false
+
+foo.bar = false
+foo.bar? # => false
 
 foo.baz  # => nil
 foo.baz? # => false
