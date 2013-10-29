@@ -16,7 +16,7 @@ module BooleanAccessor
 
   private
   def alias_question(attrs)
-    attrs.each{ |attr| define_method("#{attr}?"){ send(attr) || false} }
+    attrs.each{ |attr| define_method("#{attr}?"){ send(attr) || false } }
   end
 end
 
